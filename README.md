@@ -35,19 +35,30 @@ limitations under the License.
 
 > Test if a value is an [ArrayBuffer][mdn-arraybuffer].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-arraybuffer
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arraybuffer@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-arraybuffer/tags). For example,
-
-```javascript
-import isArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arraybuffer@v0.1.0-esm/index.mjs';
+var isArrayBuffer = require( '@stdlib/assert-is-arraybuffer' );
 ```
 
 #### isArrayBuffer( value )
@@ -55,7 +66,7 @@ import isArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-array
 Tests if a value is an [`ArrayBuffer`][mdn-arraybuffer].
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
 
 var bool = isArrayBuffer( new ArrayBuffer( 10 ) );
 // returns true
@@ -74,23 +85,18 @@ bool = isArrayBuffer( [] );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@esm/index.mjs';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import Int8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int8@esm/index.mjs';
-import Int16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int16@esm/index.mjs';
-import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@esm/index.mjs';
-import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@esm/index.mjs';
-import Uint8ClampedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8c@esm/index.mjs';
-import Uint16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@esm/index.mjs';
-import Uint32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@esm/index.mjs';
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
-import isArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arraybuffer@esm/index.mjs';
+```javascript
+var Float32Array = require( '@stdlib/array-float32' );
+var Float64Array = require( '@stdlib/array-float64' );
+var Int8Array = require( '@stdlib/array-int8' );
+var Int16Array = require( '@stdlib/array-int16' );
+var Int32Array = require( '@stdlib/array-int32' );
+var Uint8Array = require( '@stdlib/array-uint8' );
+var Uint8ClampedArray = require( '@stdlib/array-uint8c' );
+var Uint16Array = require( '@stdlib/array-uint16' );
+var Uint32Array = require( '@stdlib/array-uint32' );
+var ArrayBuffer = require( '@stdlib/array-buffer' );
+var isArrayBuffer = require( '@stdlib/assert-is-arraybuffer' );
 
 var bool = isArrayBuffer( new ArrayBuffer( 10 ) );
 // returns true
@@ -130,10 +136,6 @@ bool = isArrayBuffer( {} );
 
 bool = isArrayBuffer( null );
 // returns false
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -164,7 +166,7 @@ bool = isArrayBuffer( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -194,8 +196,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-arraybuffer.svg
 [npm-url]: https://npmjs.org/package/@stdlib/assert-is-arraybuffer
 
-[test-image]: https://github.com/stdlib-js/assert-is-arraybuffer/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/assert-is-arraybuffer/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/assert-is-arraybuffer/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/assert-is-arraybuffer/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/assert-is-arraybuffer/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/assert-is-arraybuffer?branch=main
@@ -228,9 +230,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-sharedarraybuffer]: https://github.com/stdlib-js/assert-is-sharedarraybuffer/tree/esm
+[@stdlib/assert/is-sharedarraybuffer]: https://github.com/stdlib-js/assert-is-sharedarraybuffer
 
-[@stdlib/assert/is-typed-array]: https://github.com/stdlib-js/assert-is-typed-array/tree/esm
+[@stdlib/assert/is-typed-array]: https://github.com/stdlib-js/assert-is-typed-array
 
 <!-- </related-links> -->
 
