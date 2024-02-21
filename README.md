@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arraybuffer@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-arraybuffer/tags). For example,
+
+```javascript
 import isArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arraybuffer@v0.2.1-esm/index.mjs';
 ```
 
@@ -85,7 +90,7 @@ import Uint8ClampedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8
 import Uint16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@esm/index.mjs';
 import Uint32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@esm/index.mjs';
 import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
-import isArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arraybuffer@v0.2.1-esm/index.mjs';
+import isArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arraybuffer@esm/index.mjs';
 
 var bool = isArrayBuffer( new ArrayBuffer( 10 ) );
 // returns true
