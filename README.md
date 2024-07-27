@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arraybuffer@deno/mod.js';
+import isArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arraybuffer@v0.2.2-deno/mod.js';
 ```
 
 #### isArrayBuffer( value )
@@ -80,7 +80,7 @@ import Uint8ClampedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8
 import Uint16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@deno/mod.js';
 import Uint32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@deno/mod.js';
 import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@deno/mod.js';
-import isArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arraybuffer@deno/mod.js';
+import isArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-arraybuffer@v0.2.2-deno/mod.js';
 
 var bool = isArrayBuffer( new ArrayBuffer( 10 ) );
 // returns true
