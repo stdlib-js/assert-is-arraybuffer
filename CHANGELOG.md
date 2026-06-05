@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-06-05)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`3d01e36`](https://github.com/stdlib-js/stdlib/commit/3d01e36f3512db51788021478b6a3f10c312a047) - **docs:** update related packages sections [(#12549)](https://github.com/stdlib-js/stdlib/pull/12549) _(by stdlib-bot, Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.3">
 
 ## 0.2.3 (2026-02-07)
